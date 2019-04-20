@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="287.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Q3.FXMLbinaryController">
+   <children>
+      <VBox layoutX="170.0" layoutY="25.0" prefHeight="200.0" prefWidth="205.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectedHandler" text="Select the file" />
+            <Label fx:id="fileLable" prefHeight="36.0" prefWidth="180.0" text="selected file ....?" />
+            <Button mnemonicParsing="false" onAction="#binaryToTextHandler" text="Binary to text" />
+            <Button mnemonicParsing="false" onAction="#textToBinaryHandler" text="text to binary" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+      <Label layoutY="217.0" prefHeight="70.0" prefWidth="180.0" text="ملاحظة : يجب أن يكون الملف الذي تريد تحويله إلى باينري يحتوي فقط على حروف إنجليزية ولا يجوز استخدام المسافات أو اي رموز أخرى" textAlignment="RIGHT" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
